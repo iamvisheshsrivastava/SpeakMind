@@ -4,7 +4,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 
 # Set your Together AI API key
-TOGETHER_API_KEY = "82e32db889eda8c76d765e77d692ad8f015f91153434775fed2303e09daf513f"
+TOGETHER_API_KEY = ""
 client = Together(api_key=TOGETHER_API_KEY)
 
 # Initialize memory for conversation
