@@ -4,3 +4,4 @@ fastapi
 streamlit
 docker
 langchain
+langchain_community
