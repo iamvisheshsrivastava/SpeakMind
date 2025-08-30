@@ -68,17 +68,9 @@ SpeakMind/
 
 ```mermaid
 flowchart TD
-  subgraph SpeakMind
-    direction TB
-    UI[Streamlit UI]
-    API[FastAPI Backend]
-    AGT[Agents / LangChain]
-    LLM[LLM Provider(s)]
-  end
-
-  UI -->|HTTP /query| API
-  API -->|Invoke| AGT
-  AGT -->|Calls| LLM
+  UI[Streamlit UI] -->|HTTP /query| API[FastAPI Backend]
+  API -->|Invoke| AGT[Agents / LangChain]
+  AGT -->|Calls| LLM[LLM Providers]
   AGT -->|Response| API
   API -->|JSON| UI
 ```
